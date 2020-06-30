@@ -1,0 +1,5 @@
+package com.rahul.suppliers.service.talk.to;
+
+public interface ProductProxy {
+
+}

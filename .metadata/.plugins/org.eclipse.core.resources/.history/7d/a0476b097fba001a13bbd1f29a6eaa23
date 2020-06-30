@@ -1,0 +1,38 @@
+package com.rahul.suppliers;
+
+import org.cassandraunit.spring.CassandraUnit;
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+
+import com.rahul.suppliers.Repository.SupplierRepository;
+import com.rahul.suppliers.controller.SupplierController;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest({ "spring.data.cassandra.port=9042", "spring.data.cassandra.keyspace-name=test101" })
+@EnableAutoConfiguration
+@ComponentScan
+@ContextConfiguration
+@CassandraUnit
+public class SupplierControllerTest {
+   private MockMvc mockMvc;
+	@Mock
+	private SupplierRepository supplierRepository;
+	@Autowired
+	private SupplierController supplierController;
+	@Before
+	public void init() {
+		this.mockMvc = MockMvcBuilders.standaloneSetup(supplierController).build();
+	}
+	
+	
+}

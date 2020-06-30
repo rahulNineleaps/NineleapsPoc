@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.rahul.products.serviceTest.ProductControllerTest.createProduct" project="Product" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="createProduct" classname="com.rahul.products.serviceTest.ProductControllerTest" time="0.052"/>
+</testrun>

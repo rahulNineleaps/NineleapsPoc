@@ -1,0 +1,5 @@
+package com.rahul.orders.models;
+
+public class Order {
+
+}

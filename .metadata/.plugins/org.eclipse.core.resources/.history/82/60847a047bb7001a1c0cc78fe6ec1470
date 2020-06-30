@@ -1,0 +1,62 @@
+package com.rahul.products.serviceTest;
+
+import org.cassandraunit.spring.CassandraUnit;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.context.WebApplicationContext;
+
+import com.rahul.products.Repository.ProductRepository;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest({ "spring.data.cassandra.port=9042", "spring.data.cassandra.keyspace-name=cycling1" })
+@EnableAutoConfiguration
+@ComponentScan
+@ContextConfiguration
+@CassandraUnit
+/*
+ * @CassandraDataSet(value = { "cassandra-init.sh" }, keyspace = "cycling1")
+ * 
+ * @CassandraUnit
+ */
+public class ProductControllerTest {
+	//mockmvc is used to do controller test it introduces dispatcher servelet
+private MockMvc mockMvc;
+@Autowired
+private WebApplicationContext context;
+@Autowired
+private ProductRepository productRepository;
+
+
+}
+/*
+
+
+public class SupplierServiceTest {
+	
+	private MockMvc mockMvc;
+	@Autowired
+	private WebApplicationContext webApplicationContext;
+	@Autowired
+	private SupplierRepository supplierRepository;
+	@Autowired
+	private SupplierController supplierController;
+	@Autowired
+	private SupplierService supplierService;
+	
+	
+	@Before
+	public void init() {
+		this.mockMvc = MockMvcBuilders.standaloneSetup(supplierController).build();
+	}
+	@Test
+	public void test() {
+		assertEquals("Hi","Hi");
+	}
+	
+}*/

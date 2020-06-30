@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ProductControllerTest" project="Product" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.rahul.products.serviceTest.ProductControllerTest" time="0.325">
+    <testcase name="getProductTest" classname="com.rahul.products.serviceTest.ProductControllerTest" time="0.251"/>
+    <testcase name="createProductTest" classname="com.rahul.products.serviceTest.ProductControllerTest" time="0.022"/>
+    <testcase name="getAllTest" classname="com.rahul.products.serviceTest.ProductControllerTest" time="0.052"/>
+  </testsuite>
+</testrun>
