@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;com.rahul.suppliers.exceptions.OrderNotPlacedException.java&apos; to &apos;ProductNotFoundException.java&apos;&#x0A;- Original project: &apos;supplier&apos;&#x0A;- Original element: &apos;com.rahul.suppliers.exceptions.OrderNotPlacedException.java&apos;&#x0A;- Renamed element: &apos;com.rahul.suppliers.exceptions.ProductNotFoundException.java&apos;" description="Rename compilation unit &apos;OrderNotPlacedException.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rahul.suppliers.exceptions{OrderNotPlacedException.java" name="ProductNotFoundException.java" references="false" stamp="1592979303175" version="1.0"/>
-</session>

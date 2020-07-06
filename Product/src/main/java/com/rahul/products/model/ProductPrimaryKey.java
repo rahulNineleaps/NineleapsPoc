@@ -7,28 +7,21 @@ import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyClass;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@EqualsAndHashCode
 @PrimaryKeyClass
 public class ProductPrimaryKey implements Serializable{
 
 	public ProductPrimaryKey(int supplierId, int productid) {
-		super();
+		/* super(); */
 		this.supplierId = supplierId;
 		this.productid = productid;
 	}
-	public ProductPrimaryKey() {
-		
-	}
+
+	/*
+	 * public ProductPrimaryKey() {
+	 * 
+	 * }
+	 */
 	/**
 	 * 
 	 */

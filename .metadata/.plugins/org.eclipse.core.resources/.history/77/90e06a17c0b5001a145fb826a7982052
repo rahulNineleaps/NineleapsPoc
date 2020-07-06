@@ -1,7 +1,0 @@
-package com.rahul.orders.Repository;
-
-import org.springframework.data.cassandra.repository.CassandraRepository;
-
-public interface OrderRepository extends CassandraRepository<T, ID> {
-
-}

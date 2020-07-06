@@ -1,47 +1,43 @@
 package com.rahul.products.model;
 
 
-import javax.validation.constraints.PositiveOrZero;
-import javax.validation.constraints.Size;
 
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Table("product")
 public class Product {
 	
 	@PrimaryKey
 	private ProductPrimaryKey pk; 
-	@Size(min = 3, max = 50)
+	//@Size(min = 3, max = 50)
 	@Column("name")
 	private String name;
-	@PositiveOrZero
+	//@PositiveOrZero
 	@Column("price")
 	private Double price ;
-	@Size(min = 10, max = 200)
+	//@Size(min = 10, max = 200)
 	@Column("description")
 	private String description;
 
 	
-	  public Product(ProductPrimaryKey pk, @Size(min = 3, max = 50) String name, @PositiveOrZero Double price,
-			@Size(min = 10, max = 200) String description) {
-		super();
+	public Product(ProductPrimaryKey pk,
+			/* @Size(min = 3, max = 50) */ String name,
+			/* @PositiveOrZero */Double price,
+			/* @Size(min = 10, max = 200) */ String description) {
+		/* super(); */
 		this.pk = pk;
 		this.name = name;
 		this.price = price;
 		this.description = description;
 	}
-	  public Product() {
-		  
-	  }
+
+	/*
+	 * public Product() {
+	 * 
+	 * }
+	 */
 	public ProductPrimaryKey getPk() { return pk; } public void
 	  setPk(ProductPrimaryKey pk) { this.pk = pk; }
 	 

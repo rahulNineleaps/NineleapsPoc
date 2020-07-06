@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;apiregistry.jar&apos; to &apos;target&apos;&#x0A;- Original project: &apos;Discovery&apos;&#x0A;- Destination element: &apos;target&apos;&#x0A;- Original element: &apos;apiregistry.jar&apos;" description="Copy file" element1="target/apiregistry.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1592787426305" target="/Product/target" units="0" version="1.0"/>
-</session>
